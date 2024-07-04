@@ -1,26 +1,26 @@
-//VALIDAÇÃO DE PREENCHIMENTO
+// VALIDAÇÃO DE PREEMCHIMENTO
 function acessar(){
     let loginEmail = document.getElementById('loginEmail').value;
     let loginSenha = document.getElementById('loginSenha').value;
-
+ 
     if(!loginEmail || !loginSenha){
-        alert('Favor prencher todos os campos')
+        alert('Por favor, preencher todos os campos.');
     }else{
-       /// alert('Campos prenchidos com sucesso')
-       window.location.href = 'cadastro.html';
+        //alert("Campos preenchidos com sucesso");
+        window.location.href = 'cadastro.html';
     }
 }
-
-// FUNÇÃO DE CRIAÇÃO DE ARRAY PARA ARMAZENAMENTO DE NOMES 
-
-var dadosLista =[];
-
-function salvarUser(){value;
-    let nomeUser = document.getElementById('nomeuser').value;
-
-    if(nomeUse){
-
+ 
+// FUNÇÃO DE CRIAÇÃO DE ARRAY PARA ARMAZENAMENTO DE NOMES
+ 
+var dadosLista = [];
+ 
+function salvarUser(){
+    let nomeUser = document.getElementById('nomeUser').value;
+ 
+    if(nomeUser){
+ 
     }else{
-        alert('Favor, informar um nome');
+        alert("Favor, informar um nome");
     }
 }
