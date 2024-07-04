@@ -19,7 +19,9 @@ function salvarUser(){
     let nomeUser = document.getElementById('nomeUser').value;
  
     if(nomeUser){
- 
+        dadosLista.push(nomeUser);
+        console.log(dadosLista);
+        document.getElementById('nomeUser').value ="";
     }else{
         alert("Favor, informar um nome");
     }
