@@ -35,4 +35,10 @@ function criaLista(){
         tabela += "<tr><td>" + dadosLista[i] + "</td><td></td></tr>";
         document.getElementById('tabela').innerHTML = tabela;
     }
+} 
+
+// FUNÇÃO PARA EXCLUIR NOME EM LISTA
+
+function excluir(i){
+    dadosLista.splice((i - 1), 1);
 }
