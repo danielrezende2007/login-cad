@@ -32,7 +32,7 @@ function salvarUser(){
 function criaLista(){
     let tabela = document.getElementById('tabela').innerHTML = "<tr><th>Nome Usuário</th><th>Ações</th></tr>";
     for(let i = 0; i <= (dadosLista.length - 1); i++){
-        tabela += "<tr><td>" + dadosLista[i] + "</td><td></td></tr>";
+        tabela += "<tr><td>" + dadosLista[i] + "</td><td> <button onclick='excluir(this.parentNode.parentNode.rowIndex)'>Excluir</button> <button onclick='editar(this.parentNode.parentNode.rowIndex)'>Editar</button>  </td></tr>";
         document.getElementById('tabela').innerHTML = tabela;
     }
 } 
@@ -42,5 +42,10 @@ function criaLista(){
 function excluir(i){
     dadosLista.splice((i - 1), 1);
     document.getElementById('tabela').deleteRow(i);
-    
+
+} 
+
+// FUNÇÃO PARA EDITAR NOME DA LISTA
+function editar(i){
+    document.getElementById("nomeuser").value = (dadoslista [(i - 1)], 1);
 }
