@@ -20,9 +20,17 @@ function salvarUser(){
  
     if(nomeUser){
         dadosLista.push(nomeUser);
-        console.log(dadosLista);
+       console.log(dadosLista);
         document.getElementById('nomeUser').value ="";
     }else{
         alert("Favor, informar um nome");
+    }
+}
+
+// FUNÇÃO DE CRIAÇÃO DE LISTA
+function crialista(){
+    let tabela = docuet.getElementbyid('tabela').innerHTML = "<tr><th>Nome Usuário</th><th>Ações</th></tr>";
+    for(let i = 0; i <= (dadoslista.length - 1); i++){
+        tabela += '<tr></th>' = dadosLista[i] + "</td><td></td></tr>";
     }
 }
